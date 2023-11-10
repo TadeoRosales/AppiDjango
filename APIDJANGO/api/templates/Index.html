@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Login
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="{% static 'css/Index.css' %}" rel="stylesheet" >
+  
+</head>
+<body style="display: flex; justify-content:center ; align-items: center;height: 100vh;overflow: hidden;">
+  <form action="{% url 'loginview' %}" id="login-form" class="user" method="POST">
+   
+    <div class="heading">Login</i></div>
+    <div class="left">
+      <label for="name">email</label> <br />
+      <input type="email" name="email" id="idusername" /> <br />
+      <label for="password" >Password</label> <br />
+      <input type="password" name="password" id="id_password" /> <br />
+      <input type="Submit"  value="Acceder">
+      {% if error_message %}
+        <p>{{ error_message }}</p> 
+      {% endif %}
+    </div>
+    <div class="right">
+      <div class="connect">Connect with</div>
+      <a href="Registro" class="facebook">Facebook
+        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+      </a> <br />
+      <a href="" class="google">Google
+        <i class="fa-brands fa-google" aria-hidden="true"></i>
+      </a> <br />
+      <a href= "{% url 'Registro' %}" class="Registro" >Cuenta nueva
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+
+      
+    </div>
+    
+  </form>  
+</body>
+</html>

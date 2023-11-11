@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x#+h+n#yctb@)jsn2h812&7g)olb=q8e6vab&fdeb1puw5%(ui
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brokmake-3.onrender.com',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

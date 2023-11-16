@@ -31,15 +31,13 @@
   </div>
   <h2><span><a> <center>Ingresar</center></a></span></h2>
 
-  <left>
-    <h2>Empleado</h2></div><br />
-    <div class="boton boton2 animacion">
-  </left>
 
-  <right> 
+    <h2>Empleado</h2></div><br />
+    <div class="boton boton1 animacion">
+  
     <h2>Cliente</h2></div><br />
   <div class="boton boton2 animacion">
-  </right>
+  
 
   <br>
   <br>
@@ -85,7 +83,7 @@
 
     .botones{
       width: 100%;
-      height: auto;
+      height: 100px;
       margin: auto;
     }
     
@@ -102,9 +100,20 @@
     .boton:hover{
       background: -webkit-linear-gradient(45deg, rgba(203,108,151,1) 0%, rgba(67,135,219,1) 100%);
     }
+
+    .boton1{
+      transform: scale(0.96,0.96);
+      float: left;
+    }
+    
+    .boton1:active{
+      transform: scale(1,1);
+      -webkit-box-shadow: 0.5px 5px 0.5px 0px rgba(77,77,77,1);
+    }
     
     .boton2{
       transform: scale(0.96,0.96);
+      float: right;
     }
     
     .boton2:active{

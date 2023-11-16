@@ -31,12 +31,68 @@
   </div>
   <h2><span><a> <center>Ingresar</center></a></span></h2>
 
+  <left><h1>Empleado</h1>
+  <div class="botones">
+  <div class="boton boton1 animacion">
+  </left>
+
+  <right> 
+    <h1>Botones CSS</h1>
+  <div class="botones">
+  <div class="boton boton1 animacion">
+  </right>
   <h2><span><a href= "{% url 'graficas' %}" class="Registro" >Graficas </a></span></h2>
 
   <h2><span><a href= "{% url 'Encuesta' %}">Encuesta de satisfaccion</a></span></h2>
 
   <style>
     @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+    }
+
+    h1{
+      text-shadow: 0px 3px 2px rgba(150, 150, 150, 1);
+      text-align: center;
+      color: #FAFAFA;
+      margin: 5%;
+    }
+
+    .botones{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    
+    /*Boton general*/
+    .boton{
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 1% auto;
+      width: 150px;
+      height: 50px;
+      background: -webkit-linear-gradient(45deg, rgba(199,95,142,1) 0%, rgba(54,128,217,1) 100%);
+    }
+    
+    .boton:hover{
+      background: -webkit-linear-gradient(45deg, rgba(203,108,151,1) 0%, rgba(67,135,219,1) 100%);
+    }
+    
+    /*Boton 1*/
+    .boton1{
+      -webkit-box-shadow: 0.5px 5px 0.5px 0px rgba(77,77,77,1);
+    }
+    
+    .boton1:active{
+      transform: scale(0.96,0.96);
+      -webkit-box-shadow: 0.4px 1.5px 0.4px 0px rgba(77,77,77,1);
+    }
+    
 
 body {
   margin:0;

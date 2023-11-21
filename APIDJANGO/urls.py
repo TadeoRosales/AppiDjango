@@ -46,8 +46,7 @@ urlpatterns = [
     path('procesar_registro/',UserFormView.as_view(),name='procesar_registro'),     
     path('login/', LoginView.as_view(), name='loginview'),   
     
-    Path('',Templateview.as_view(Template_name="Index.html")),
-    Path('accounts/', include('allauth.urls')),
+   
                                             
 ]
 

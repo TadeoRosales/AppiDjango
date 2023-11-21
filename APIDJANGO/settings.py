@@ -42,11 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'Django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.proviers.google',
+    
 ]
 
 
@@ -142,14 +138,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-Authentication_BACKENDS  = (
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
-)
-
-SITE_ID = 1
-
-LOGIN_REDIRECT_URL = '/' 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

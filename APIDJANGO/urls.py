@@ -32,14 +32,15 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #Url de ruta
     path('', Home.as_view(),name='login'),
+    path('admin/', admin.site.urls),   
     path('Registro/',Registro.as_view(),name='Registro'),
     path('index/',Index.as_view(),name='Index'),
     path('graficas/',Graficas.as_view(),name='graficas'),
     path('Formulario/',Formulario.as_view(),name='Formulario'),
     path('Encuesta/',Encuesta.as_view(),name='Encuesta'),
     path('procesar_registro/',UserFormView.as_view(),name='procesar_registro'),     
-    path('login/', LoginView.as_view(), name='loginview'),                        
+    path('login/', LoginView.as_view(), name='loginview'),   
+    
+                      
 ]

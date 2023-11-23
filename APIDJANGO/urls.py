@@ -31,11 +31,9 @@ from django.views.generic import TemplateView
 
 
 
-
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     #Url de ruta
     path('', Home.as_view(),name='login'),
     path('Registro/',Registro.as_view(),name='Registro'),
@@ -45,9 +43,6 @@ urlpatterns = [
     path('Encuesta/',Encuesta.as_view(),name='Encuesta'),
     path('procesar_registro/',UserFormView.as_view(),name='procesar_registro'),     
     path('login/', LoginView.as_view(), name='loginview'),   
-    path('accounts/', include('allauth.urls')),
+  
                                     
 ]
-
-
-

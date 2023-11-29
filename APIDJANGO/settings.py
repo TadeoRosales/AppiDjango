@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-  
+    'django.contrib.sites', 
 ]
 
 
@@ -53,13 +52,11 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware', 
 ]
 
 
-
-ROOT_URLCONF = 'APIDJANGO.urls',
+#ROOT_URLCONF = 'APIDJANGO.urls',
 
 TEMPLATES = [
     {
@@ -88,20 +85,19 @@ WSGI_APPLICATION = 'APIDJANGO.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #'NAME': 'Brokmake',
-        #'USER': 'postgres',
-        #'PASSWORD': '1234',
-        #'HOST': 'localhost',
-        #'PORT': 5432,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Brokmake',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '',
         
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgresql_vf9z',
-        'USER': 'root',
-        'PASSWORD': 'LgCIdWkuPJOxyb3ens0AiZMKsKzTeVee',
-        'HOST': 'oregon-postgres.render.com',
-        'PORT': "5432",
-  
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'postgresql_vf9z',
+        #'USER': 'root',
+        #'PASSWORD': 'LgCIdWkuPJOxyb3ens0AiZMKsKzTeVee',
+        #'HOST': 'oregon-postgres.render.com',
+        #'PORT': "5432",
     }
 }
 

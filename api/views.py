@@ -270,5 +270,5 @@ class Graficas(APIView):
             # Agrega aquí las variables para las otras preguntas
         })
 
-   
+
 

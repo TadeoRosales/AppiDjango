@@ -41,6 +41,7 @@ urlpatterns = [
     path('Encuesta/',Encuesta.as_view(),name='Encuesta'),
     path('procesar_registro/',UserFormView.as_view(),name='procesar_registro'),     
     path('login/', LoginView.as_view(), name='loginview'),   
-    
-                      
+    path('login/', LoginView.as_view(), name='loginview'),          
+    path('login/', LoginView.as_view(), name='loginview'),                                 
 ]
+

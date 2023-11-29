@@ -3,50 +3,45 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{% static 'css/Encuesta.css' %}" rel="stylesheet" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/Encuesta.css' %}" rel="stylesheet" >
 </head>
     </head>
     <body class="center-perfect">
-      
 
-        <title>FORMULARIO DE SATISFACCION</title>
-      <h1 id="title"><font size=7>FORMULARIO DE SATISFACCION</font></h1>
-      <p id="description" ><font size=6><strong>Gracias por llenar este formulario de encuesta<strong></font></p>
-        <font size=5>
+    <title>FORMULARIO DE SATISFACCION</title>
+    <h1 id="title"><font size=7>FORMULARIO DE SATISFACCION</font></h1>
+    <p id="description" ><font size=6><strong>Gracias por llenar este formulario de encuesta<strong></font></p>
+    <font size=5>
 
     <form class="center-perfect" method="POST" action="{%url 'encuesta' %}">
 
 
-        <div id="containerName">
-          <label id="name-label" for="name">Nombre</label><br> 
-        <input type="text" name="Name" id="name" class="sizeInput" placeholder="Introduzca su nombre"
-            required/>
-        </div><br>
-        
-       
-           <label for="opciones">¿Área a la que perteneces? :</label><br><br>
-          <select name="opciones" id="dropdown">
-      <option name="Area" value="Opciones">Selecione alguna opcion</option>
-      <option name="Area" value="Atencion a cliente">Departamento de Atencion a clientes</option>
-      <option name="Area" value="Ingenieria">Departamento de Ingenieria</option>
-      <option name="Area" value="Operaciones">Departamento de Operaciones</option>
-      <option name="Area" value="prefiero no decirlo">Prefiero no decirlo</option>
-         
-         </select><br>
-        <p>¿La pagina funciona correctamente?
-        <br><br><input type="radio" name="pregunta1" value="Si" class="input-radio">Si
-        <br><br><input type="radio" name="pregunta1" value="No" class="input-radio"> No
+    <div id="containerName">
+    <label id="name-label" for="name">Nombre</label><br> 
+    <input type="text" name="Name" id="name" class="sizeInput" placeholder="Introduzca su nombre" required/>
+    </div><br>
+    <label for="opciones">¿Área a la que perteneces? :</label><br><br>
+    <select name="opciones" id="dropdown">
+    <option name="Area" value="Opciones">Selecione alguna opcion</option>
+    <option name="Area" value="Atencion a cliente">Departamento de Atencion a clientes</option>
+    <option name="Area" value="Ingenieria">Departamento de Ingenieria</option>
+    <option name="Area" value="Operaciones">Departamento de Operaciones</option>
+    <option name="Area" value="prefiero no decirlo">Prefiero no decirlo</option>
+    </select><br>
+    <p>¿La pagina funciona correctamente?
+    <br><br><input type="radio" name="pregunta1" value="Si" class="input-radio">Si
+    <br><br><input type="radio" name="pregunta1" value="No" class="input-radio"> No
         <br></p>
 
         <p>¿Has trabajado antes con un sistema web ?
-            <br><br><input type="radio" name="pregunta2" value="Si" class="input-radio">Si
-            <br><br><input type="radio" name="pregunta2" value="No" class="input-radio"> No
-            <br></p> 
+        <br><br><input type="radio" name="pregunta2" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta2" value="No" class="input-radio"> No
+        <br></p> 
 
         <p>¿Te gusta la combinacion de los colores?
             <br><br><input type="radio" name="pregunta3" value="Si" class="input-radio">Si
@@ -63,56 +58,46 @@
             <br></p>
 
         <p>¿Te gusta tu interfaz grafica?
-             <br><br><input type="radio" name="pregunta5" value="Si" class="input-radio">Si
-             <br><br><input type="radio" name="pregunta5" value="No" class="input-radio"> No
-             <br><br><input type="radio" name="pregunta5" value="Me da igual" class="input-radio"> Me da igual
-             <br></p>
+        <br><br><input type="radio" name="pregunta5" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta5" value="No" class="input-radio"> No
+        <br><br><input type="radio" name="pregunta5" value="Me da igual" class="input-radio"> Me da igual
+        <br></p>
 
-       <p>¿Te gusta la forma de los botones?
-             <br><br><input type="radio" name="pregunta6" value="Si" class="input-radio">Si
-             <br><br><input type="radio" name="pregunta6" value="No" class="input-radio"> No
-             <br><br><input type="radio" name="pregunta6" value="Me da igual" class="input-radio"> Me da igual
-             <br></p>
+        <p>¿Te gusta la forma de los botones?
+        <br><br><input type="radio" name="pregunta6" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta6" value="No" class="input-radio"> No
+        <br><br><input type="radio" name="pregunta6" value="Me da igual" class="input-radio"> Me da igual
+        <br></p>
 
         <p>¿Crees que la interfaz grafica es amigable a la hora de trabajar?
-             <br><br><input type="radio" name="pregunta7" value="Si" class="input-radio">Si
-             <br><br><input type="radio" name="pregunta7" value="No" class="input-radio"> No
-             <br><br><input type="radio" name="pregunta7" value="No se" class="input-radio"> No se
-             <br></p>
-         
+        <br><br><input type="radio" name="pregunta7" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta7" value="No" class="input-radio"> No
+        <br><br><input type="radio" name="pregunta7" value="No se" class="input-radio"> No se
+        <br></p>
         <p>¿Te sientes comod@ a la hora de trabajar en la pagina ?
-             <br><br><input type="radio" name="pregunta8" value="Si" class="input-radio">Si
-             <br><br><input type="radio" name="pregunta8" value="No" class="input-radio"> No
-            
-             <br></p>     
+        <br><br><input type="radio" name="pregunta8" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta8" value="No" class="input-radio"> No
+        <br></p>     
 
         <p>¿Te Gustaria poder elegir tus colores para tu interfaz grafica ?
-             <br><br><input type="radio" name="pregunta9" value="Si" class="input-radio">si
-             <br><br><input type="radio" name="pregunta9" value="No" class="input-radio"> No
-             <br></p>  
-             
+        <br><br><input type="radio" name="pregunta9" value="Si" class="input-radio">si
+        <br><br><input type="radio" name="pregunta9" value="No" class="input-radio"> No
+        <br></p>  
         <p>¿Te Gustaria que la pagina tuviera mas funciones?
-             <br><br><input type="radio" name="pregunta10" value="Si" class="input-radio">Si
-             <br><br><input type="radio" name="pregunta10" value="No" class="input-radio"> No
-             <br></p>    
-             
+        <br><br><input type="radio" name="pregunta10" value="Si" class="input-radio">Si
+        <br><br><input type="radio" name="pregunta10" value="No" class="input-radio"> No
+        <br></p>    
         <p>Que calificacion le colocarias a la pagina colocando 1 como insuficiente y 5 como Excelencia
-             <br><br><input type="radio" name="pregunta11" value="1" class="input-radio">1
-             <br><br><input type="radio" name="pregunta11" value="2" class="input-radio">2
-             <br><br><input type="radio" name="pregunta11" value="3" class="input-radio">3
-             <br><br><input type="radio" name="pregunta11" value="4" class="input-radio">4
-             <br><br><input type="radio" name="pregunt11" value="5" class="input-radio">5
-             <br></p>     
-   
+        <br><br><input type="radio" name="pregunta11" value="1" class="input-radio">1
+        <br><br><input type="radio" name="pregunta11" value="2" class="input-radio">2
+        <br><br><input type="radio" name="pregunta11" value="3" class="input-radio">3
+        <br><br><input type="radio" name="pregunta11" value="4" class="input-radio">4
+        <br><br><input type="radio" name="pregunt11" value="5" class="input-radio">5
+        <br></p>     
 
-        
-          <div><button id="submit" class="myButton">Enviar</button></div>
+        <div><button id="submit" class="myButton">Enviar</button></div>
+</font>
 
-
-          </font>
-
-          
-         
-    </form>    
-  </body>
+</form>    
+</body>
 </html>

@@ -85,19 +85,19 @@ WSGI_APPLICATION = 'APIDJANGO.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Brokmake',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '',
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'Brokmake',
+        #'USER': 'postgres',
+        #'PASSWORD': '1234',
+        #'HOST': 'localhost',
+        #'PORT': '',
         
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'postgresql_vf9z',
-        #'USER': 'root',
-        #'PASSWORD': 'LgCIdWkuPJOxyb3ens0AiZMKsKzTeVee',
-        #'HOST': 'oregon-postgres.render.com',
-        #'PORT': "5432",
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgresql_vf9z',
+        'USER': 'root',
+        'PASSWORD': 'LgCIdWkuPJOxyb3ens0AiZMKsKzTeVee',
+        'HOST': 'oregon-postgres.render.com',
+        'PORT': "5432",
     }
 }
 

@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ]
 
 
-#ROOT_URLCONF = 'APIDJANGO.urls',
+ROOT_URLCONF = 'APIDJANGO.urls',
 
 TEMPLATES = [
     {

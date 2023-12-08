@@ -16,9 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include 
-from django.contrib import staticfiles
 from api.views import UserFormView
-from api.views import EncuestaFormView
 from api.views import Home
 from api.views import Registro
 from api.views import Index
@@ -26,7 +24,7 @@ from api.views import Graficas
 from api.views import Encuesta
 from api.views import Formulario
 from api.views import LoginView 
-from django.views.generic import TemplateView 
+
 
 
 
@@ -40,8 +38,6 @@ urlpatterns = [
     path('Formulario/',Formulario.as_view(),name='Formulario'),
     path('Encuesta/',Encuesta.as_view(),name='Encuesta'),
     path('procesar_registro/',UserFormView.as_view(),name='procesar_registro'),     
-    path('login/', LoginView.as_view(), name='loginview'),   
-    path('login/', LoginView.as_view(), name='loginview'),          
-    path('login/', LoginView.as_view(), name='loginview'),                                 
+    path('login/', LoginView.as_view(), name='loginview'),                               
 ]
 

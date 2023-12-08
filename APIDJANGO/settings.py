@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-x#+h+n#yctb@)jsn2h812&7g)olb=q8e6vab&fdeb1puw5%(ui
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brokmake-3.onrender.com','*']
+ALLOWED_HOSTS = ['brokmake-3.onrender.com','*',]
 
 
 # Application definition
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'APIDJANGO.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         #'NAME': 'Brokmake',
         #'USER': 'postgres',
         #'PASSWORD': '1234',
